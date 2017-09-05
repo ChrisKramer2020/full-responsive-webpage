@@ -1,13 +1,117 @@
 @import 'utility';
-
+@import url('https://fonts.googleapis.com/css?family=BioRhyme|Black+Ops+One|Bungee|Bungee+Shade|Creepster|Ewert|Fruktur|Gravitas+One|Monoton|Rubik:900');
 $base-text-size: 16px;
 $base-font-family: sans-serif;
 
 html {
   @include full-height;
+  margin:0;
 }
 
 body {
   margin: 0;
   font: $base-text-size / 1 $base-font-family;
+}
+
+.intro {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  background-image: url("https://s-media-cache-ak0.pinimg.com/originals/8f/cf/1a/8fcf1a21e870269fa5b4263dca5dd3a3.jpg");
+  display: table;
+  top: 0px;
+  background-size: cover;
+    .inner {
+      display: table-cell;
+      vertical-align: middle;
+      width: 100%;
+      max-width: none;
+    }
+}
+
+.content {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 28%;
+    h1 {
+      // font-family: 'Bungee', cursive;
+      font-size: 600%;
+      font-weight: 100;
+      color: #E1EFE9;
+      line-height: 70%;
+    }
+}
+
+.btn {
+  font-family: sans-serif;
+  font-size: 130%;
+  font-weight: 400;
+  color: #3A6168;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: solid #3A6168;
+  padding: 10px 20px;
+  border-radius: 9px;
+}
+.btn:hover {
+  color: #CBDFD6;
+  border: solid #CBDFD6 2px;
+  transition: all 0.5s ease-in-out;
+}
+
+p {
+  font-size: 200%;
+  line-height: 200%;
+  font-weight: 400;
+  font-family: sans-serif;
+  color: #E1EFE9;
+
+}
+
+@media screen and (max-width: 900px) {
+  .content {
+    padding-bottom: 30%;
+  }
+  .content h1 {
+    font-size: 450%;
+  }
+  .btn {
+    font-size: 130%;
+    padding: 9px 17px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    padding-bottom: 40%;
+  }
+  .content h1 {
+    font-size: 300%;
+  }
+  .btn {
+    font-size: 110%;
+    padding: 9px 17px;
+  }
+  p {
+    font-size: 120%;
+    line-height: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .content {
+    padding-bottom: 50%;
+  }
+  .content h1 {
+    font-size: 250%;
+  }
+  .btn {
+    font-size: 100%;
+    padding: 6px 14px;
+  }
+  p {
+    font-size: 100%;
+    line-height: 100%;
+  }
 }
