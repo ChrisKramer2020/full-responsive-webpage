@@ -43,7 +43,7 @@ body {
     }
 }
 
-.btn {
+#btn {
   font-family: sans-serif;
   font-size: 130%;
   font-weight: 400;
@@ -54,7 +54,7 @@ body {
   padding: 10px 20px;
   border-radius: 9px;
 }
-.btn:hover {
+#btn:hover {
   color: #CBDFD6;
   border: solid #CBDFD6 2px;
   transition: all 0.5s ease-in-out;
@@ -114,4 +114,9 @@ p {
     font-size: 100%;
     line-height: 100%;
   }
+}
+
+#second-section {
+  margin-bottom: 50%;
+  margin-top: 50%;
 }
